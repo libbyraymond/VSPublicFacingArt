@@ -1,15 +1,20 @@
 .header {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 20px;
     justify-content: center;
     background-color: blueviolet;
     text-align: center; 
 }
 
+.header-image {
+    width: 100%;
+    height: auto;
+}
+
 .Section1 {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 0px;
     justify-content: center;
     background-color: blue;
@@ -18,7 +23,7 @@
 
 .Section2 {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 0px;
     justify-content: center;
     background-color: green;
@@ -27,7 +32,7 @@
 
 .Section3 {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 0px;
     justify-content: center;
     background-color: yellow;
@@ -36,7 +41,7 @@
 
 .Section4 {
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     padding: 0 0px;
     justify-content: center;
     background-color: red;
