@@ -2,7 +2,7 @@
 
 /* Colors */
 :root {
-    --p-blue: #404E7C;
+    --p-blue: #1a2a5e;
     --p-green: #053225;
     --teal: #48A9A6;
     --red: #A72608;
@@ -49,11 +49,20 @@
 /* Body */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family:poppins;
+    font-size: 1.1rem;
     line-height: 1.6;
     background-color: var(--p-blue);
 }
+h1 {
+    font-family: Chalk;
+    font-size: 3rem;
+}
 
+h2 {
+    font-family: Chalk;
+    font-size: 2rem;
+}
 /* Sections */
 .section {
     padding: 60px 20px;
@@ -70,6 +79,11 @@ body {
     display: flex;
     align-items: center;
     gap: 40px;
+}
+
+@font-face {
+    font-family: 'Chalk';
+    src: url('Chalk-Regular.ttf') format('truetype');
 }
 
 /* Section backgrounds */
@@ -96,6 +110,10 @@ h2 {
 p {
     font-size: 1.1rem;
 }
+.text-content {
+    flex: 1;
+}
+
 
 /* Images */
 .content.image-right {
@@ -104,10 +122,6 @@ p {
 
 .content.image-left {
     flex-direction: row-reverse;
-}
-
-.text-content {
-    flex: 1;
 }
 
 .image-container {
