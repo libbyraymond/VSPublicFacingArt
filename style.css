@@ -1,22 +1,60 @@
-.header {
+
+
+/* Colors */
+:root {
+    --p-blue: #404E7C;
+    --p-green: #053225;
+    --teal: #48A9A6;
+    --red: #A72608;
+    --Beige: #C4A484;
+}
+
+/* Video Header */
+.video-container {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    background-color: var(--p-blue);
+}
+
+
+.headline-container {
+    position: relative;
+    margin-top: -100px;
+    z-index: 2;
+    background-color: var(--Beige);
+    padding: 20px;
+    max-width: 1000px;
+    margin-left: 2%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: white;
+}
+
+/*.header {
     width: 100%;
     margin: 0;
     padding: 0 20px;
     justify-content: center;
-    background-color: blueviolet;
     text-align: center; 
 }
 
 .header-image {
     width: 100%;
     height: auto;
-}
+} */
+
+/* Body */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: var(--p-blue);
 }
 
+/* Sections */
 .section {
     padding: 60px 20px;
     min-height: 300px;
@@ -26,32 +64,60 @@ body {
 }
 
 .content {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
+/* Section backgrounds */
 .section-1 {
-    background-color: #2c3e50;
+    background-color: var(--p-blue);
 }
-
 .section-2 {
-    background-color: #ffcd94;
+    background-color: var(--p-blue);
 }
-
 .section-3 {
-    background-color: #2c3e50;
+    background-color: var(--p-blue);
 }
-
 .section-4 {
-    background-color: #ffcd94;
+    background-color: var(--p-blue);
 }
 
+/* Section Headings */
 h2 {
     margin-top: 0;
     font-size: 2rem;
 }
 
+/* paragraphs */
 p {
     font-size: 1.1rem;
+}
+
+/* Images */
+.content.image-right {
+    flex-direction: row;
+}
+
+.content.image-left {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    height: 400px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
